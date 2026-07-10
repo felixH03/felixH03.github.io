@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felix Hua - Personal Website</title>
+    <link rel="icon" type="image/jpeg" href="profile.jpg">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif; color: #1a1a2e; background: #f5f6fa; line-height: 1.7; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+        .hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); color: #fff; padding: 80px 0 60px; text-align: center; }
+        .hero-avatar { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; border: 4px solid rgba(255,255,255,0.3); margin-bottom: 20px; }
+        .hero h1 { font-size: 2.4em; font-weight: 700; margin-bottom: 6px; }
+        .hero .subtitle { font-size: 1.1em; opacity: 0.85; margin-bottom: 10px; }
+        .hero .tagline { font-size: 0.95em; opacity: 0.7; }
+        .hero .social-links { margin-top: 18px; }
+        .hero .social-links a { color: #fff; text-decoration: none; display: inline-block; margin: 0 8px; padding: 8px 16px; border: 1px solid rgba(255,255,255,0.3); border-radius: 6px; font-size: 0.9em; transition: background 0.2s; }
+        .hero .social-links a:hover { background: rgba(255,255,255,0.1); }
+        section { padding: 56px 0; }
+        section:nth-child(even) { background: #fff; }
+        .section-title { font-size: 1.6em; font-weight: 700; margin-bottom: 32px; padding-bottom: 10px; border-bottom: 3px solid #0f3460; display: inline-block; }
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+        .about-grid .label { font-weight: 600; color: #0f3460; }
+        .timeline { position: relative; }
+        .timeline-item { position: relative; padding-left: 28px; margin-bottom: 28px; }
+        .timeline-item::before { content: ""; position: absolute; left: 0; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: #0f3460; border: 2px solid #fff; }
+        .timeline-item h3 { font-size: 1.1em; color: #0f3460; }
+        .timeline-item .meta { font-size: 0.9em; color: #666; margin-bottom: 4px; }
+        .timeline-item p { font-size: 0.95em; color: #444; }
+        .card { background: #f8f9fa; border-radius: 8px; padding: 24px; margin-bottom: 16px; border-left: 4px solid #0f3460; }
+        .card h3 { font-size: 1.05em; margin-bottom: 6px; }
+        .card .meta { font-size: 0.88em; color: #666; }
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+        .skill-box { background: #f0f2f5; border-radius: 8px; padding: 20px; text-align: center; }
+        .skill-box h3 { font-size: 1em; color: #0f3460; margin-bottom: 6px; }
+        .skill-box p { font-size: 0.9em; color: #555; }
+        .contact-links { text-align: center; }
+        .contact-links a { display: inline-block; margin: 8px 16px; color: #0f3460; text-decoration: none; font-size: 1em; font-weight: 500; }
+        .contact-links a:hover { text-decoration: underline; }
+        footer { background: #1a1a2e; color: rgba(255,255,255,0.6); text-align: center; padding: 24px 0; font-size: 0.85em; }
+        @media (max-width: 768px) { .hero { padding: 48px 0 36px; } .hero h1 { font-size: 1.8em; } .about-grid { grid-template-columns: 1fr; } .section-title { font-size: 1.3em; } }
+    </style>
+</head>
+<body>
+<header class="hero">
+    <div class="container">
+        <img src="profile.jpg" alt="Hua Feilong" class="hero-avatar">
+        <h1>Hua Feilong (Felix)</h1>
+        <div class="subtitle">M.S. Applied Statistics | Data Analysis | Financial Time Series Forecasting</div>
+        <div class="social-links">
+            <a href="resume.pdf" download>Download Resume (PDF)</a>
+            <a href="mailto:allenhfl03@163.com">Email</a>
+            <a href="https://github.com/felixH03" target="_blank">GitHub</a>
+        </div>
+    </div>
+</header>
+<section>
+    <div class="container">
+        <h2 class="section-title">Personal Info</h2>
+        <div class="about-grid">
+            <div><span class="label">Name</span><br>Hua Feilong (Felix)</div>
+            <div><span class="label">Born</span><br>Dec 2002</div>
+            <div><span class="label">Ethnicity</span><br>Han</div>
+            <div><span class="label">Email</span><br>allenhfl03@163.com</div>
+            <div><span class="label">Phone / WeChat</span><br>15058112452</div>
+            <div><span class="label">Location</span><br>Hangzhou, Zhejiang</div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>ZJUFE - Applied Statistics (M.S.)</h3>
+                <div class="meta">Sep 2025 - Present | GPA: 4.4/5</div>
+                <p>School of Data Science. Research: Financial time series forecasting, deep learning interpretability.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>ZJUFE - Economics Talent Class (B.S.)</h3>
+                <div class="meta">Sep 2021 - Jun 2025 | GPA: 4.1/5</div>
+                <p>School of Economics, B.A. in Economics.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Xigu Industrial Management - Intern</h3>
+                <div class="meta">Jun 2025 - Aug 2025</div>
+                <p>Venue setup, event planning, channel operations. Onboarded 10+ channel partners.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Alibaba Assets - Bankruptcy Restructuring Intern</h3>
+                <div class="meta">Jan 2024 - Feb 2024</div>
+                <p>Corporate bankruptcy restructuring projects, asset valuation, data management.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Asset Valuation &amp; Business Analysis</h3>
+                <div class="meta">Jul 2023 - Sep 2023</div>
+                <p>Suzhou Hot Spring Hotel, QinYou Biotech, Guangzhou Real Estate bankruptcy projects. Land/mining rights data collection. Assisted in building bankruptcy evaluation models.</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Hangzhou Fuyang Jiangbin Community - Intern</h3>
+                <div class="meta">Jan 2023 - Feb 2023</div>
+                <p>Community service, safety promotion, official reception assistance.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 class="section-title">Research</h2>
+        <div class="card">
+            <h3>Journal Publication - Heliyon (CAS Q3)</h3>
+            <div class="meta">Mar 2024, Third Author</div>
+            <p>"Environmental regulation and industrial structure upgrading: Evidence of China"</p>
+        </div>
+        <div class="card">
+            <h3>NASDAQ Multi-Step Forecasting &amp; Interpretability</h3>
+            <div class="meta">2026, Graduate Paper</div>
+            <p>LSTM, PatchTST, N-BEATS for 5-day price prediction with feature correlation and attention analysis.</p>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-box"><h3>Data Analysis</h3><p>Python, SQL, SPSS, Stata</p></div>
+            <div class="skill-box"><h3>ML / Deep Learning</h3><p>LSTM, Transformer, sklearn, PyTorch</p></div>
+            <div class="skill-box"><h3>Data Viz</h3><p>Matlab, Pyecharts, Matplotlib</p></div>
+            <div class="skill-box"><h3>Languages</h3><p>English CET6, Mandarin</p></div>
+            <div class="skill-box"><h3>Certifications</h3><p>Python Level 2</p></div>
+            <div class="skill-box"><h3>Core Traits</h3><p>Resilient, Optimistic, Problem-solver</p></div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p style="font-size:1em; line-height:1.8; color:#444; max-width:800px;">
+            I am a positive, outgoing person who brings an optimistic attitude to every interaction.
+            I approach my studies with rigor and strong responsibility, consistently delivering results with excellent execution.
+            During my internships, I maintained a proactive work ethic, handling all responsibilities with resilience
+            and strong problem-solving skills. My core philosophy: perseverance, optimism, rising to challenges.
+        </p>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-links">
+            <a href="mailto:allenhfl03@163.com">allenhfl03@163.com</a>
+            <a href="tel:15058112452">15058112452</a>
+            <a href="https://github.com/felixH03" target="_blank">github.com/felixH03</a>
+        </div>
+    </div>
+</section>
+<footer><div class="container">&copy; 2026 Felix Hua (Hua Feilong). All rights reserved.</div></footer>
+</body>
+</html>
