@@ -1,25 +1,148 @@
-<!DOCTYPE html>
-<html lang='zh-CN'>
-<head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>作品集 · felixH</title>
-    <link rel='preconnect' href='https://fonts.googleapis.com'>
-    <link href='https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800;900&display=swap' rel='stylesheet'>
-    <link rel='stylesheet' href='css/style.css'>
-</head>
-<body>
-<div class='sub-deco sub-deco-1'></div>
-<div class='sub-deco sub-deco-2'></div>
-<script src='js/particles.js'></script>
-    <div class='page-wrap'>
-        <div class='sub-wrap'>
-            <div class='page-header'>
-                <a href='index.html' class='back-btn'>&larr; 返回</a>
-                <h2 class='gradient-text'>🎨 作品集</h2>
-            </div>
-            <div class='footer-nav'><a href='index.html'>返回首页</a></div>
-        </div>
-    </div>
-</body>
+﻿<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="zh-CN">
+	<head>
+		<title>作品集 · felixH</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">felixH</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">首页</a></li>
+							<li><a href="education.html">学习经历</a></li>
+							<li><a href="experience.html">工作经历</a></li>
+							<li class="active"><a href="portfolio.html">作品集</a></li>
+							<li><a href="hobbies.html">兴趣爱好</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="mailto:allenhfl03@163.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://github.com/felixH03" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">PORTFOLIO · 成果</span>
+									<h1>作品集</h1>
+									<p>代表性项目与研究：网站、模型、AI 工具与期刊论文<br />
+									—— 把想法落地成可运行、可复用、可交付的东西。</p>
+								</header>
+
+								<h2>项目经历</h2>
+
+								<div class="tl-wrap">
+									<div class="tl">
+										<span class="tl-meta">2026.07 — 2026.08 · 独立开发</span>
+										<h3>摆摊咖啡点餐网站</h3>
+										<p>vibe coding 开发的咖啡店移动端点单与外卖页面（HTML + Tailwind CSS + 原生 JS + 高德地图 API）：实现数据驱动菜单、冰/糖规格、购物车管理、自提/外送切换、表单校验与订单一键复制；集成高德地图选点和逆地理编码，支持定位选址，整体采用移动端优先的响应式设计。</p>
+										<span class="chip">HTML</span>
+										<span class="chip">Tailwind</span>
+										<span class="chip">高德 API</span>
+										<span class="chip">移动端</span>
+									</div>
+
+									<div class="tl">
+										<span class="tl-meta">2026.07 — 2026.08 · 独立开发 · Python / Flask / DeepSeek API</span>
+										<h3>数字化项目助手（预审 + 软件功能点拆分）</h3>
+										<p>基于 Flask 开发本地预审 Web 工具：上传数字化项目建议书，自动提取文本、按地区路由匹配预审规范，调用 DeepSeek 大模型生成预审报告，输出符合公文格式的 Word 文档；同时支持软件功能点自动拆分，生成带层级合并与类型统计的 Excel。</p>
+										<span class="chip">Flask</span>
+										<span class="chip">大模型</span>
+										<span class="chip">Prompt 工程</span>
+										<span class="chip">python-docx / openpyxl</span>
+									</div>
+
+									<div class="tl">
+										<span class="tl-meta">2023.07 — 2023.09 · 阿里资产</span>
+										<h3>阿里资产土地估价模型</h3>
+										<p>构建自动化土地估值方案：基于海量历史交易数据训练模型，按住宅、商业、工业等用地类型分别精准估价；搭建省市区三级联动查询网站，业务人员输入地块参数即可秒级获得参考成交价。技术要点：特征工程（用途大类/土地来源、中位数填充、LabelEncoder）、Log1p 变换 + expm1 还原、按用地类型拆分单价/总价分域建模、RMSE/MAE/R² 评估与特征重要性分析、Flask 毫秒级本地推理。</p>
+										<span class="chip">机器学习</span>
+										<span class="chip">估值建模</span>
+										<span class="chip">Flask</span>
+										<span class="chip">可解释性</span>
+									</div>
+								</div>
+
+								<hr />
+
+								<h2>论文发表</h2>
+								<div class="tl">
+									<span class="tl-meta">2024 · Heliyon · SCI（JCR Q2）/ 中科院三区</span>
+									<h3>The impact of environmental regulations on the upgrading of the industrial structure</h3>
+									<p>Zhu, H., Fang, H., <strong>Hua, Feilong</strong>, Shao, W., &amp; Cai, P. (2024). <em>Heliyon, 10</em>(6), e27091 —— Evidence from China 的实证研究。</p>
+									<ul class="actions" style="margin-top:1rem;">
+										<li><a href="paper.pdf" class="button primary" download>📄 下载论文</a></li>
+									</ul>
+								</div>
+
+								<hr />
+
+								<h2>简历</h2>
+								<p>完整履历与项目细节见个人简历。</p>
+								<ul class="actions">
+									<li><a href="resume.pdf" class="button primary" download>📄 下载简历 PDF</a></li>
+									<li><a href="index.html" class="button">← 返回首页</a></li>
+								</ul>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact">
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto:allenhfl03@163.com">allenhfl03@163.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://github.com/felixH03" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul>
+							<li>&copy; felixH · 华飞龙</li>
+							<li>Design: <a href="https://html5up.net">Massively by HTML5 UP</a></li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
+

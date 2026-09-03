@@ -1,0 +1,181 @@
+/* ============================================================
+   felixH · 自定义补充样式
+   基于 Massively by HTML5 UP（CCA 3.0）模板进行个性化扩展
+   ============================================================ */
+
+/* 字体栈：中文回退到系统黑体，保证行内可读性 */
+body {
+	font-family: 'Merriweather', Georgia, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+#nav a, .button, .logo {
+	font-family: 'Source Sans Pro', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+}
+
+p, li {
+	-webkit-font-smoothing: antialiased;
+}
+
+/* ------------------------------------------------------------
+   01. 通用杂志小节标题（两侧横线，仿 Massively 的 header 风格）
+   ------------------------------------------------------------ */
+.block-title {
+	text-align: center;
+	margin: 4.5rem 0 3rem;
+}
+.block-title h2 {
+	letter-spacing: 0.06em;
+}
+
+/* ------------------------------------------------------------
+   02. emoji 封面（用于入口卡片，替代照片图）
+   ------------------------------------------------------------ */
+.cover {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 15rem;
+	position: relative;
+	overflow: hidden;
+	border: 0;
+	margin-bottom: 1.6rem;
+}
+.cover > span {
+	font-size: 4.6rem;
+	line-height: 1;
+	filter: drop-shadow(0 0.35rem 0.9rem rgba(0, 0, 0, 0.18));
+}
+/* 渐变色封面变体 */
+.cover.cv-1 { background: linear-gradient(135deg, #ffd6a5 0%, #fdffb6 45%, #caffbf 100%); }
+.cover.cv-2 { background: linear-gradient(135deg, #a0c4ff 0%, #bdb2ff 50%, #ffc6ff 100%); }
+.cover.cv-3 { background: linear-gradient(135deg, #fdcbf1 0%, #ffd1ff 55%, #c9cbff 100%); }
+.cover.cv-4 { background: linear-gradient(135deg, #d4a5ff 0%, #b9fbc0 100%); }
+.cover.cv-5 { background: linear-gradient(135deg, #c1f4ff 0%, #b5d8ff 60%, #c9cbff 100%); }
+.cover.cv-6 { background: linear-gradient(135deg, #ffd0d0 0%, #ffb3c6 100%); }
+
+/* ------------------------------------------------------------
+   03. 技能条目（杂志式行分隔）
+   ------------------------------------------------------------ */
+.skill-row {
+	display: grid;
+	grid-template-columns: 7rem 1fr;
+	gap: 2rem;
+	align-items: baseline;
+	padding: 1.8rem 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+.skill-row:last-child { border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+.skill-no {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 900;
+	letter-spacing: 0.2em;
+	color: rgba(0, 0, 0, 0.3);
+}
+.skill-row h3 { margin: 0 0 0.35rem 0; }
+.skill-row p  { margin: 0; }
+
+/* ------------------------------------------------------------
+   04. 标签胶囊
+   ------------------------------------------------------------ */
+.chip {
+	display: inline-block;
+	border: 1px solid rgba(0, 0, 0, 0.22);
+	border-radius: 2rem;
+	padding: 0.35rem 1rem;
+	margin: 0.2rem 0.25rem;
+	font-family: 'Source Sans Pro', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+	font-weight: 600;
+	font-size: 0.8rem;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+
+/* ------------------------------------------------------------
+   05. 时间线（子页经历用）
+   ------------------------------------------------------------ */
+.tl-wrap { text-align: left; margin: 2.5rem 0 1rem; }
+.tl {
+	border-left: 2px solid rgba(0, 0, 0, 0.9);
+	margin: 0 0 3rem 0.35rem;
+	padding: 0 0 0.5rem 2.25rem;
+	position: relative;
+	text-align: left;
+}
+.tl::before {
+	content: '';
+	position: absolute;
+	left: -0.5rem;
+	top: 0.35rem;
+	width: 0.7rem;
+	height: 0.7rem;
+	border-radius: 50%;
+	background: #000;
+}
+.tl .tl-meta {
+	display: block;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	font-size: 0.72rem;
+	letter-spacing: 0.22em;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.45);
+	margin-bottom: 0.7rem;
+}
+.tl h3 { margin: 0 0 0.4rem 0; }
+.tl p  { font-size: 0.95rem; margin-bottom: 0.5rem; }
+
+/* ------------------------------------------------------------
+   06. 子页 hero 摘要（date 下方更宽松的行距）
+   ------------------------------------------------------------ */
+header.major p {
+	font-size: 0.95rem;
+	color: rgba(0, 0, 0, 0.65);
+}
+
+/* ------------------------------------------------------------
+   07. 首页 Hero 封面背景（动漫形象 + 柔光遮罩）
+   ------------------------------------------------------------ */
+#intro {
+	background-image: url('../../images/hero.jpg');
+	background-size: cover;
+	background-position: center top;
+	background-color: #10131c;
+	/* 把标题组整体下移，避开人物脸部 */
+	padding-bottom: 0rem;
+}
+
+/* 标题与副标题精确下移至画面约 64% 处 */
+#intro h1,
+#intro p {
+	transform: translateY(56px);
+}
+
+/* 箭头按钮单独回调，避免被底部导航遮挡 */
+#intro .actions {
+	transform: translateY(24px);
+}
+
+#intro::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	background:
+		linear-gradient(to bottom,
+			rgba(8, 10, 16, 0.28) 0%,
+			rgba(8, 10, 16, 0.42) 55%,
+			rgba(6, 8, 12, 0.86) 100%);
+}
+
+/* 移动端适配：技能行改为上下堆叠 */
+@media screen and (max-width: 736px) {
+	.skill-row {
+		grid-template-columns: 1fr;
+		gap: 0.4rem;
+	}
+	.cover { min-height: 10rem; }
+	#intro {
+		background-position: center top;
+	}
+}
